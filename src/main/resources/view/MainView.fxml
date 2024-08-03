@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainViewController">
+   <children>
+      <Label layoutX="197.0" layoutY="49.0" text="Bank APP">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="114.0" layoutY="128.0" text="Enter Amount : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="txtAmount" layoutX="291.0" layoutY="127.0" />
+      <Button fx:id="btnDeposit" layoutX="146.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnDepositOnAction" style="-fx-background-color: lightblue;" text="Deposit" />
+      <Button fx:id="btnWithdraw" layoutX="377.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnWithdrawOnAction" style="-fx-background-color: lightgreen;" text="Withdraw" />
+      <Button fx:id="btnPrint" layoutX="256.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnPrintOnAction" style="-fx-background-color: orange;" text="Pirnt">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblBalance" layoutX="185.0" layoutY="261.0" text="Balance : Rs. 0.00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
